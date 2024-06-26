@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanyictions</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/icon.ico">
+
+</head>
+<body>
+    <h1>SZINONÍMÁK</h1>
+    <div id="status">Keress szinonímákat!</div>
+    <div id="game-container">
+        <div id="sol1" class="hidden">
+        <div class="hidden-container">
+            <h3>Synonyms 1</h3>
+            <p>Synonyms for "word1"</p>
+        </div>
+        </div>
+        
+        <div id="sol2" class="hidden">
+            <div class="hidden-container">
+                <h3>Synonyms 2</h3>
+                <p>Synonyms for "word2"</p>
+            </div>
+        </div>
+
+        <div id="sol3" class="hidden">
+            <div class="hidden-container">
+                <h3>Synonyms 3</h3>
+                <p>Synonyms for "word3"</p>
+            </div>
+        </div>
+
+        <div id="sol4" class="hidden">
+            <div class="hidden-container">
+                <h3>Synonyms 4</h3>
+                <p>Synonyms for "word4"</p>
+            </div>
+        </div>
+
+        <div id="tiles">
+            <button id="1" class="tile">+</button>
+            <button id="2" class="tile">+</button>
+            <button id="3" class="tile">+</button>
+            <button id="4" class="tile">+</button>
+            <button id="5" class="tile">+</button>
+            <button id="6" class="tile">+</button>
+            <button id="7" class="tile">+</button>
+            <button id="8" class="tile">+</button>
+            <button id="9" class="tile">+</button>
+            <button id="10" class="tile">+</button>
+            <button id="11" class="tile">+</button>
+            <button id="12" class="tile">+</button>
+            <button id="13" class="tile">+</button>
+            <button id="14" class="tile">+</button>
+            <button id="15" class="tile">+</button>
+            <button id="16" class="tile">+</button>
+        </div>
+
+
+    </div>
+
+    <h2 id="lives">Életek: <span id="life1">🖤</span><span id="life2">🖤</span><span id="life3">🖤</span><span id="life4">🖤</span></h2>
+    
+
+    <div class="buttonsDiv">
+        <button id="DeselectAll" onclick="deselectAll()" class="secondaryBtn">Mégsem</button>
+        <button id="Submit" onclick="submitAnswer()">Elfogad</button>
+        
+    </div>
+    <a href="https://balintesik.github.io/sanyictions"><button id="Reset" class="secondaryBtn">Újra</button></a>
+
+    <div class="ducky">
+        <a href="https://balintesik.github.io/sanyictions"><img src="./images/ducky.png" alt="Ducky" class="ducky"></a>
+    </div>
+
+    <div class="susdog">
+        <img src="./images/susdog.png" alt="sus dog" class="susdog">
+    </div>
+
+    <footer>ComSiHoo Tech Ltd. 2024</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="data.js"></script>
+    <script src="wordshandler.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+

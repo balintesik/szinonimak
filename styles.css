@@ -1,0 +1,368 @@
+body{
+    margin: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Poppins', cursive;
+    /* viewport 100%:
+    height: 100vh;
+    justify-content: center; */
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'Poppins', cursive;
+    color: #011F3F;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.O {
+    height: 3.2rem;
+}
+
+h2{
+    font-family: 'Poppins', cursive;
+    font-size: 1.5rem;
+}
+
+#game-container{
+    transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 85%);
+    border-radius: 25px;
+    overflow: hidden;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+
+#tiles{
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+button{
+    width: 170px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    background-color: hsl(35, 100%, 96%);
+    color: hsl(211, 97%, 13%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(35, 100%, 90%);
+}
+
+button.clicked{
+    background-color: #FF7F3E;
+    color: aliceblue;
+}
+
+button#Submit{
+    background-color: hsl(211, 97%, 13%);
+    color: hsl(35, 100%, 96%);
+}
+
+#Submit:hover{
+    background-color: hsl(211, 97%, 23%);
+}
+
+#Submit:active{
+    background-color: hsl(211, 97%, 33%);
+}
+
+footer{
+    font-size: 0.7rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.ducky{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    width: 250px;
+    height: auto;
+    z-index: -1;
+}
+
+.susdog{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    right:50px;
+    width: 150px;
+    height: auto;
+    z-index: 1;
+}
+
+.hidden-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    height: 75px;
+    width: 725px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0px;
+    margin:15px
+}
+
+h3 {
+    color: hsl(35, 100%, 96%);
+    margin: 0;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+p {
+    color: hsl(35, 100%, 96%);
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+#testBtn {
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    z-index: -1;
+    background-color: hsl(211, 97%, 13%);
+    color: hsl(35, 100%, 96%);
+}
+
+.hidden{
+    display: none;
+}
+
+#sol1 .hidden-container{
+    background-color: #55bb5a;
+}
+
+#sol2 .hidden-container{
+    background-color: #FFC700;
+}
+
+#sol3 .hidden-container{
+    background-color: #3AA6B9;
+}
+
+#sol4 .hidden-container{
+    background-color: #604CC3;
+}
+
+.wrongAns {
+    background-color: rgb(219, 29, 0);
+    color: hsl(35, 100%, 96%);
+}
+
+#status {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.buttonsDiv {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+}
+
+.secondaryBtn {
+    background-color: hsl(0, 0%, 85%);
+}
+
+.secondaryBtn:hover {
+    background-color: hsl(201, 70%, 81%);
+}
+
+#Reset {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 480px){
+    h1{
+        font-size: 30px;
+    }
+
+    .O {
+        height: 22px;
+    }
+
+    h2 {
+        font-size: 10px;
+    }
+
+    #status{
+        font-size: 15px;
+    }
+
+    button{
+        font-size: 10px;
+        width: 70px;
+        height: 70px;
+        font-weight: 800;
+        border-radius: 5px;
+        word-wrap: break-word;
+    }
+
+    #tiles{
+        grid-gap: 5px;
+        padding: 5px;
+        margin: 0;
+        border-radius: 0;
+    }
+    #game-container{
+        border-radius:5px;
+    }
+
+    #lives{
+        font-size: 18px
+    }
+
+    #Submit {
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+        margin-left: 0;
+    }
+
+    #DeselectAll {
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    #Reset {
+        height: 40px;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .ducky{
+        bottom: 10px;
+        left: 10px;
+        width: 70px;
+    }
+
+    .susdog{
+        right:10px;
+        width: 100px;
+    }
+
+    .hidden-container{
+        height: 70px;
+        width: 305px;
+        font-size: 10px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1201px){
+    h1{
+        font-size: 40px;
+    }
+
+    .O {
+        height: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #status{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 16px;
+        width: 110px;
+        height: 70px;
+        font-weight: 800;
+        border-radius: 5px;
+        word-wrap: break-word;
+    }
+
+    #tiles{
+        grid-gap: 5px;
+        padding: 5px;
+        margin: 0;
+        border-radius: 0;
+    }
+    #game-container{
+        border-radius:5px;
+    }
+
+    #lives{
+        font-size: 18px
+    }
+
+    #DeselectAll {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    #Reset {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    #Submit {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    .ducky{
+        bottom: 10px;
+        left: 10px;
+        width: 70px;
+    }
+
+    .hidden-container{
+        height: 70px;
+        width: 465px;
+        font-size: 10px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+    
+    p {
+        font-size: 12px;
+    }
+}
